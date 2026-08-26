@@ -51,33 +51,33 @@ export interface InviteConfig {
 // ---------------------------------------------------------------------------
 export const inviteConfig: InviteConfig = {
   theme: "muslim",
-  partnerOne: "Zainab",
-  partnerTwo: "Imran",
-  tagline: "request the honour of your presence at their Nikah",
-  weddingDate: "2026-02-14",
+  partnerOne: "Zoheb",
+  partnerTwo: "Muskan",
+  tagline: "request the honour of your presence at their Nikah & Walima",
+  weddingDate: "2026-12-27",
   heroPhoto: "",
   note:
     "By the grace of Allah, we are beginning our journey together and would be blessed to have you share this joy with us.",
   events: [
     {
       name: "Nikah Ceremony",
-      date: "2026-02-14",
+      date: "2026-12-27",
       time: "11:00 AM",
-      venue: "Noor Banquet Hall",
-      address: "45 Crescent Road, Bandra, Mumbai, India",
+      venue: "Captain House, Dapoli",
+      address: "Captain House, Dapoli, Maharashtra 415712",
     },
     {
       name: "Walima Reception",
-      date: "2026-02-15",
-      time: "7:30 PM",
-      venue: "Al Zahra Gardens",
-      address: "88 Marine Drive, Mumbai, India",
+      date: "2026-12-29",
+      time: "11:00 AM",
+      venue: "Royal Banquet Hall",
+      address: "Royal Banquet Hall, JK Files, MIDC Road, Ratnagiri, Maharashtra 415639",
     },
   ],
   rsvp: {
     enabled: true,
-    formEndpoint: "",
-    notifyEmail: "yourname@example.com",
+    formEndpoint: "https://formspree.io/f/xzebprgl",
+    notifyEmail: "mukadamzohebaziz@gmail.com",
   },
   music: {
     src: "audio/dua-bismillah.mp3",
