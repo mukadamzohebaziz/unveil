@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { inviteConfig } from "./config/invite.config";
-import { demoPresets } from "./config/demoPresets";
 import { themes, type ThemeId } from "./config/themes";
 import { applyUrlOverrides } from "./lib/overrides";
 import Cover from "./components/Cover";
@@ -11,12 +10,6 @@ import MapSection from "./components/MapSection";
 import RSVP from "./components/RSVP";
 import MusicToggle from "./components/MusicToggle";
 import Ornament from "./components/Ornament";
-
-function getInitialTheme(): ThemeId {
-  const param = new URLSearchParams(window.location.search).get("theme");
-  if (param && param in themes) return param as ThemeId;
-  return inviteConfig.theme;
-}
 
 export default function App() {
   const themeId = inviteConfig.theme;
