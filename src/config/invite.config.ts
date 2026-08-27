@@ -55,7 +55,7 @@ export const inviteConfig: InviteConfig = {
   partnerTwo: "Muskan",
   tagline: "request the honour of your presence at their Nikah & Walima",
   weddingDate: "2026-12-27",
-  heroPhoto: "",
+  heroPhoto: "couple.png",
   note:
     "By the grace of Allah, we are beginning our journey together and would be blessed to have you share this joy with us.",
   events: [
