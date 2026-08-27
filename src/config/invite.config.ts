@@ -50,7 +50,7 @@ export interface InviteConfig {
 // automatically.
 // ---------------------------------------------------------------------------
 export const inviteConfig: InviteConfig = {
-  theme: "muslim",
+  theme: ["muslim"], // Keeps only the Muslim theme available
   partnerOne: "Zoheb",
   partnerTwo: "Muskan",
   tagline: "request the honour of your presence at their Nikah & Walima",
