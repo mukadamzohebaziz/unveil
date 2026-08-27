@@ -19,28 +19,18 @@ function getInitialTheme(): ThemeId {
 }
 
 export default function App() {
-  const [themeId, setThemeId] = useState<ThemeId>(getInitialTheme);
+  const themeId = inviteConfig.theme;
   const [opened, setOpened] = useState(false);
   const theme = themes[themeId];
-  // Editing invite.config.ts always wins for its own theme. Previewing a
-  // different theme via the switcher shows that theme's full demo couple,
-  // so flipping themes never looks mismatched (real names under a
-  // different theme's colors/blessing).
+  
   const config = useMemo(() => {
-    const base = themeId === inviteConfig.theme ? inviteConfig : demoPresets[themeId];
-    return applyUrlOverrides(base);
-  }, [themeId]);
+    return applyUrlOverrides(inviteConfig);
+  }, []);
+
 
   useEffect(() => {
     document.body.style.overflow = opened ? "" : "hidden";
   }, [opened]);
-
-  function handleThemeChange(id: ThemeId) {
-    setThemeId(id);
-    const url = new URL(window.location.href);
-    url.searchParams.set("theme", id);
-    window.history.replaceState({}, "", url);
-  }
 
   return (
     <div data-theme={themeId} className="min-h-dvh w-full" style={{ background: "var(--color-backdrop)" }}>
