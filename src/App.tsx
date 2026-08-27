@@ -10,7 +10,6 @@ import DateReveal from "./components/DateReveal";
 import MapSection from "./components/MapSection";
 import RSVP from "./components/RSVP";
 import MusicToggle from "./components/MusicToggle";
-import ThemeSwitcher from "./components/ThemeSwitcher";
 import Ornament from "./components/Ornament";
 
 function getInitialTheme(): ThemeId {
@@ -46,7 +45,6 @@ export default function App() {
   return (
     <div data-theme={themeId} className="min-h-dvh w-full" style={{ background: "var(--color-backdrop)" }}>
       <div className="card-texture relative mx-auto min-h-dvh w-full max-w-[480px] overflow-hidden shadow-2xl sm:my-8 sm:min-h-[calc(100dvh-4rem)] sm:rounded-sm">
-        <ThemeSwitcher current={themeId} onChange={handleThemeChange} />
         <Cover partnerOne={config.partnerOne} partnerTwo={config.partnerTwo} onOpen={() => setOpened(true)} />
         <MusicToggle src={config.music?.src} armed={opened} />
 
