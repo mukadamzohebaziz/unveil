@@ -80,7 +80,7 @@ export const inviteConfig: InviteConfig = {
     notifyEmail: "mukadamzohebaziz@gmail.com",
   },
   music: {
-    src: "audio/dua-bismillah.mp3",
-    title: "Bismillahi Arqeek",
+    src: "audio/zohebmusic.mp3",
+    title: "Sajna",
   },
 };
