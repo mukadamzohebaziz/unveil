@@ -5,6 +5,6 @@ interface ThemeSwitcherProps {
   onChange: (theme: ThemeId) => void;
 }
 
-export default function ThemeSwitcher({ current, onChange }: ThemeSwitcherProps) {
-  return null; // <--- Hides the theme switcher completely
+export default function ThemeSwitcher({ _current, _onChange }: { _current?: ThemeId; _onChange?: (theme: ThemeId) => void } | ThemeSwitcherProps) {
+  return null;
 }
