@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { inviteConfig } from "./config/invite.config";
-import { themes, type ThemeId } from "./config/themes";
+import { themes } from "./config/themes";
 import { applyUrlOverrides } from "./lib/overrides";
 import Cover from "./components/Cover";
 import OpeningBlessing from "./components/OpeningBlessing";
